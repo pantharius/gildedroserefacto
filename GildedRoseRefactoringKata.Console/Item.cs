@@ -1,4 +1,4 @@
-﻿namespace csharp
+﻿namespace GildedRoseRefactoringKata.IHMConsole
 {
     public class Item
     {

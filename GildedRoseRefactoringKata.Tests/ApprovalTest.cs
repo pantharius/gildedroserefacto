@@ -1,11 +1,12 @@
-﻿using System;
+﻿using ApprovalTests;
+using ApprovalTests.Reporters;
+using GildedRoseRefactoringKata.IHMConsole;
+using NUnit.Framework;
+using System;
 using System.IO;
 using System.Text;
-using ApprovalTests;
-using ApprovalTests.Reporters;
-using NUnit.Framework;
 
-namespace csharp
+namespace GildedRoseRefactoringKata.Tests
 {
     [UseReporter(typeof(DiffReporter))]
     [TestFixture]

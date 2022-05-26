@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IHMConsole", "GildedRoseRefactoringKata.Console\IHMConsole.csproj", "{346E5DB2-1A85-421A-9FF7-CAD3CFEBC892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "GildedRoseRefactoringKata.Tests\Tests.csproj", "{984B52E4-A0D4-4E60-84EE-F835D188EC39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{346E5DB2-1A85-421A-9FF7-CAD3CFEBC892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346E5DB2-1A85-421A-9FF7-CAD3CFEBC892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346E5DB2-1A85-421A-9FF7-CAD3CFEBC892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346E5DB2-1A85-421A-9FF7-CAD3CFEBC892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{984B52E4-A0D4-4E60-84EE-F835D188EC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984B52E4-A0D4-4E60-84EE-F835D188EC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984B52E4-A0D4-4E60-84EE-F835D188EC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984B52E4-A0D4-4E60-84EE-F835D188EC39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03B892EF-B864-4433-A854-789B32C99227}
+	EndGlobalSection
+EndGlobal

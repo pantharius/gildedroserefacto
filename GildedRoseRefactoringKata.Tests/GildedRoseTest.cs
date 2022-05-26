@@ -1,7 +1,8 @@
-﻿using NUnit.Framework;
+﻿using GildedRoseRefactoringKata.IHMConsole;
+using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace csharp
+namespace GildedRoseRefactoringKata.Tests
 {
     [TestFixture]
     public class GildedRoseTest

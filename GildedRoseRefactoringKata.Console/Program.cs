@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace csharp
+namespace GildedRoseRefactoringKata.IHMConsole
 {
     public class Program
     {
@@ -46,7 +46,7 @@ namespace csharp
                 Console.WriteLine("name, sellIn, quality");
                 for (var j = 0; j < Items.Count; j++)
                 {
-                    System.Console.WriteLine(Items[j]);
+                    Console.WriteLine(Items[j]);
                 }
                 Console.WriteLine("");
                 app.UpdateQuality();
