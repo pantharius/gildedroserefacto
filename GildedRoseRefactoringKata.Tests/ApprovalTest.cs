@@ -1,18 +1,18 @@
 ﻿using ApprovalTests;
 using ApprovalTests.Reporters;
 using GildedRoseRefactoringKata.IHMConsole;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.IO;
 using System.Text;
 
-namespace GildedRoseRefactoringKata.Tests
+namespace GildedRoseRefactoringKata.UnitTests
 {
     [UseReporter(typeof(DiffReporter))]
-    [TestFixture]
+    [TestClass]
     public class ApprovalTest
     {
-        [Test]
+        [TestMethod]
         public void ThirtyDays()
         {
             
