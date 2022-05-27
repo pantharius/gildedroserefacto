@@ -19,7 +19,10 @@ namespace GildedRoseRefactoringKata.IHMConsole
 
                 if (!item.IsQualityIncrWhenGetOlder)
                 {
-                    item.Quality -= (item.SellIn < 0) ? 2 : 1;
+                    if (item.IsConjured)
+                        item.Quality -= (item.SellIn < 0) ? 4 : 2;
+                    else
+                        item.Quality -= (item.SellIn < 0) ? 2 : 1;
                 }
                 else
                 {

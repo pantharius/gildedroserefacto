@@ -13,6 +13,7 @@ namespace GildedRoseRefactoringKata.IHMConsole
             return this.Name + ", " + this.SellIn + ", " + this.Quality;
         }
 
+        public bool IsConjured => (this.Name == "Conjured Mana Cake");
         public bool IsSulfuras => (this.Name == "Sulfuras, Hand of Ragnaros");
         public bool IsQualityIncrWhenGetOlder => (this.Name == "Aged Brie" || this.IsTicket);
         public bool IsTicket => (this.Name == "Backstage passes to a TAFKAL80ETC concert");

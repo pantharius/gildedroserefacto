@@ -182,5 +182,45 @@ namespace GildedRoseRefactoringKata.UnitTests
             Assert.AreEqual(-2, Items[1].SellIn);
             Assert.AreEqual(0, Items[1].Quality);
         }
+
+        [TestMethod]
+        public void UpdateQuality_ShouldDecreaseTwiceFastOnConjured()
+        {
+            IList<Item> Items = new List<Item> {
+                new Item { Name = "Conjured Mana Cake",  SellIn = 10, Quality = 40 },
+                new Item { Name = "Conjured Mana Cake",  SellIn = 5, Quality = 20 },
+            };
+            GildedRose app = new GildedRose(Items);
+            app.UpdateQuality();
+            Assert.AreEqual(9, Items[0].SellIn);
+            Assert.AreEqual(38, Items[0].Quality);
+            Assert.AreEqual(4, Items[1].SellIn);
+            Assert.AreEqual(18, Items[1].Quality);
+            app.UpdateQuality();
+            Assert.AreEqual(8, Items[0].SellIn);
+            Assert.AreEqual(36, Items[0].Quality);
+            Assert.AreEqual(3, Items[1].SellIn);
+            Assert.AreEqual(16, Items[1].Quality);
+        }
+
+        [TestMethod]
+        public void UpdateQuality_ShouldDecreaseFourTimesFastOnConjured_WhenSellInPassed()
+        {
+            IList<Item> Items = new List<Item> {
+                new Item { Name = "Conjured Mana Cake",  SellIn = 1, Quality = 41 },
+                new Item { Name = "Conjured Mana Cake",  SellIn = 0, Quality = 35 },
+            };
+            GildedRose app = new GildedRose(Items);
+            app.UpdateQuality();
+            Assert.AreEqual(0, Items[0].SellIn);
+            Assert.AreEqual(39, Items[0].Quality);
+            Assert.AreEqual(-1, Items[1].SellIn);
+            Assert.AreEqual(31, Items[1].Quality);
+            app.UpdateQuality();
+            Assert.AreEqual(-1, Items[0].SellIn);
+            Assert.AreEqual(35, Items[0].Quality);
+            Assert.AreEqual(-2, Items[1].SellIn);
+            Assert.AreEqual(27, Items[1].Quality);
+        }
     }
 }
